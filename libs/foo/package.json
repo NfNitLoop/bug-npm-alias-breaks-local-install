@@ -1,0 +1,13 @@
+{
+  "name": "@my_private_scope_example/foo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "packMe": "pnpm pack --pack-destination ../../pkgDist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.0"
+}

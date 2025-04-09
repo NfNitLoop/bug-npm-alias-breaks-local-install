@@ -1,0 +1,19 @@
+{
+  "name": "pnpm-offline-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "pnpm clean && pnpm packAll && pnpm localInstall",
+    "clean": "rm -rf pkgDist && rm -rf installDir",
+    "packAll": "mkdir -p pkgDist && pnpm run -r packMe && ls pkgDist",
+    "localInstall": "pnpm makeInstallDir && pnpm installFoo && pnpm installBar",
+    "makeInstallDir": "mkdir installDir && cd installDir && pnpm init",
+    "installFoo": "cd installDir && pnpm install file:../pkgDist/my_private_scope_example-foo-1.0.0.tgz",
+    "installBar": "cd installDir && pnpm install file:../pkgDist/my_private_scope_example-bar-1.0.0.tgz"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.0"
+}
