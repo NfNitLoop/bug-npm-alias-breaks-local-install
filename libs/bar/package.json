@@ -7,7 +7,7 @@
     "packMe": "pnpm pack --pack-destination ../../pkgDist"
   },
   "dependencies": {
-    "@my_private_scope_example/foo": "workspace:*"
+    "@my_private_scope_example/myFooAlias": "workspace:@my_private_scope_example/foo@*"
   },
   "keywords": [],
   "author": "",
