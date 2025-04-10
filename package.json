@@ -9,8 +9,8 @@
     "packAll": "mkdir -p pkgDist && pnpm run -r packMe && ls pkgDist",
     "localInstall": "pnpm makeInstallDir && pnpm installFoo && pnpm installBar",
     "makeInstallDir": "mkdir installDir && cd installDir && pnpm init",
-    "installFoo": "cd installDir && pnpm install file:../pkgDist/my_private_scope_example-foo-1.0.0.tgz",
-    "installBar": "cd installDir && pnpm install file:../pkgDist/my_private_scope_example-bar-1.0.0.tgz"
+    "installFoo": "cd installDir && npm install file:../pkgDist/my_private_scope_example-foo-1.0.0.tgz",
+    "installBar": "cd installDir && npm install --verbose file:../pkgDist/my_private_scope_example-bar-1.0.0.tgz"
   },
   "keywords": [],
   "author": "",
