@@ -11,6 +11,11 @@ With pnpm:
 
 (pnpm is just how I'm creating the example packages. But we install them with `npm`)
 
+With npm:
+ * clone this repo
+ * `npm install`
+ * `npm run localInstall`
+
 The Bug
 -------
 
